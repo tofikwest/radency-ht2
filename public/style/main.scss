@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.table-heading {
+    text-align: center;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.table-main {
+
+    .row {
+
+        margin-bottom: 10px;
+        &.header {
+            background-color: black;
+            font-weight: bold;
+            color: #fff;
+        }
+        &.item {
+            background-color: #ffc;
+            color: #333;
+        }
+        >* {
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            >img {
+                margin-right: 5px;
+                width: 30px;
+                height: auto;
+            }
+        }
+        .content {
+            text-align: justify;
+            text-indent: 25px;
+        }
+        .name,
+        .category {
+            text-transform: capitalize;
+            padding: 10px;
+        }
+        .controls {
+            img {
+                cursor: pointer;
+            }
+        }
+        input,
+        textarea {
+            padding: 5px;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        textarea,
+        select {
+            width: 80%;
+        }
+    }
+}
+
+#add-btn,
+#form-submit {
+    border: none;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+input {
+    max-width: 100%;
+}
+
+#add-btn {
+    background-image: url("/img/add.svg");
+}
+
+#form-submit {
+    background-image: url("/img/ok.svg");
+}
+
+html {
+    font-size: 16px;
+    padding: 40px 0;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 1.5em;
+}
