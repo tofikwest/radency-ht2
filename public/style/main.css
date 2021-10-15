@@ -16,13 +16,13 @@
 }
 
 .table-main .row.header {
-  background-color: black;
+  background-color: rgb(138, 138, 138);
   font-weight: bold;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .table-main .row.item {
-  background-color: #ffc;
+  background-color: rgb(214, 214, 214);
   color: #333;
 }
 
@@ -79,6 +79,9 @@
 
 #add-btn,
 #form-submit {
+  position: absolute;
+  right: 200px;
+  top: 95px;
   border: none;
   background-position: center;
   width: 50px;
